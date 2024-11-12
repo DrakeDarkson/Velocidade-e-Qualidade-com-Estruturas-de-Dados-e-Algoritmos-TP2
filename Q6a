@@ -1,0 +1,10 @@
+def count_odd_orders(order_stack):
+    count = 0
+    for order in order_stack:
+        if order % 2 != 0:
+            count += 1
+    return count
+
+order_stack = [1, 2, 3, 4, 5]
+odd_count = count_odd_orders(order_stack)
+print(odd_count)

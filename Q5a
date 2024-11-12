@@ -1,0 +1,8 @@
+def top_task(task_stack):
+    if task_stack:
+        return task_stack[-1]
+    return None
+
+task_stack = ["Task 1", "Task 2", "Task 3"]
+top = top_task(task_stack)
+print(top)

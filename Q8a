@@ -1,0 +1,6 @@
+def reverse_queue(patient_queue):
+    return patient_queue[::-1]
+
+patient_queue = ["Patient 1", "Patient 2", "Patient 3"]
+reversed_queue = reverse_queue(patient_queue)
+print(reversed_queue)

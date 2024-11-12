@@ -1,0 +1,21 @@
+class FilaAtendimento:
+    def __init__(self):
+        self.fila = []
+
+    def adicionar_cliente(self, nome):
+        self.fila.append(nome)
+
+    def atender_cliente(self):
+        if self.fila:
+            cliente_atendido = self.fila.pop(0)
+            print(f"Atendendo: {cliente_atendido}")
+        else:
+            print("Não há clientes na fila.")
+
+    def tamanho_fila(self):
+        return len(self.fila)
+
+fila = FilaAtendimento()
+fila.adicionar_cliente("Cliente 1")
+fila.adicionar_cliente("Cliente 2")
+fila.atender_cliente()

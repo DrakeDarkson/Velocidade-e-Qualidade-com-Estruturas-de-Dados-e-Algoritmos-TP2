@@ -1,0 +1,10 @@
+def count_odd_books(book_queue):
+    count = 0
+    for book in book_queue:
+        if book % 2 != 0:
+            count += 1
+    return count
+
+book_queue = [1, 2, 3, 4, 5]
+odd_count = count_odd_books(book_queue)
+print(odd_count)

@@ -1,0 +1,15 @@
+def sort_stack(stack):
+    temp_list = []
+    while stack:
+        temp_list.append(stack.pop())
+    
+    temp_list.sort()
+    
+    for element in temp_list:
+        stack.append(element)
+    
+    return stack
+
+stack = [5, 2, 8, 1, 4]
+sorted_stack = sort_stack(stack)
+print(sorted_stack)

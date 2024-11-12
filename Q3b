@@ -1,0 +1,13 @@
+def find_duplicates_efficient(lst):
+    seen = set()
+    duplicates = set()
+    for element in lst:
+        if element in seen:
+            duplicates.add(element)
+        else:
+            seen.add(element)
+    return list(duplicates)
+
+lst = [1, 2, 3, 2, 4, 5, 3]
+duplicates = find_duplicates_efficient(lst)
+print(duplicates)
